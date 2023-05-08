@@ -9,7 +9,7 @@ function CreateArea(props) {
   function handleChange(event) {
     const { name, value } = event.target;
 
-    setNote(prevNote => {
+    setNote((prevNote) => {
       return {
         ...prevNote,
         [name]: value
@@ -28,7 +28,7 @@ function CreateArea(props) {
 
   return (
     <div>
-      <form>
+      <form className="create-note">
         <input
           name="title"
           onChange={handleChange}
